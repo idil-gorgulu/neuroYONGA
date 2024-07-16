@@ -25,9 +25,9 @@ module uart_reader (
 	top top_inst (
 		.clock(clk),
 		.start(reading_done),
-		.coef(coef),
-		.bias(bias),
-		.img(img),
+		.coef(data_buffer),
+		.bias(data_buffer1),
+		.img(data_buffer2),
 		.done(rx_done_tick_o)
     );
 
